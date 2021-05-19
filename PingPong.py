@@ -34,3 +34,4 @@ c.move(ball, ball_richtung_x, ball_richtung_y)
 ball_y = ball
 ball_x = ball
 
+# test
