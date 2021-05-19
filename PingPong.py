@@ -34,5 +34,5 @@ c.bind_all("<KeyPress-w>", Player2BewegungW)
 while True:
         c.move(ball, 1, 0.5)
         window.update()
-        sleep(0.1)
+        sleep(0.01)                     
 window.mainloop()
