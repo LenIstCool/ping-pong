@@ -29,4 +29,4 @@ ball_richtung_x = 1
 ball_richtung_y = 1
 
 c.move(ball, ball_richtung_x, ball_richtung_y)
-
+window.mainloop()
