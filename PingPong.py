@@ -35,6 +35,12 @@ ball_richtung_x = 1
 ball_richtung_y = 1
 c.move(ball, ball_richtung_x, ball_richtung_y)
 window.mainloop()
-for i in range(10):
-        c.move(ball, 8, 8)
+while True:
+        c.move(ball, 1 ,0)
+        c.bind_all("<Key>", PlayerBewegung)
+        c.bind_all("<KeyPress-s>", Player2BewegungS)
+        c.bind_all("<KeyPress-w>", Player2BewegungW)
+        window.update()
+        sleep(0.01)
+        window.mainloop()
         
