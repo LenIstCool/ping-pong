@@ -31,8 +31,12 @@ ball_richtung_x = 1
 ball_richtung_y = 1
 
 c.move(ball, ball_richtung_x, ball_richtung_y)
+<<<<<<< HEAD
 ball_y = ball
 ball_x = ball
 a = 3
 # Len ist ein schwuler keko
 # test
+=======
+
+>>>>>>> 10088da360c89afce29d33a450a335f512ebf8ee
