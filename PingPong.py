@@ -1,3 +1,4 @@
+               
 from time import sleep
 from tkinter import *
 scorePlayerA = 0
@@ -31,8 +32,7 @@ c.bind_all("<KeyPress-s>", Player2BewegungS)
 c.bind_all("<KeyPress-w>", Player2BewegungW)
 
 while True:
-        c.move(ball, 1 ,2)
+        c.move(ball, 1, 0.5)
         window.update()
-        sleep(0.01)
-               
+        sleep(0.1)
 window.mainloop()
