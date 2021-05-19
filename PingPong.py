@@ -26,14 +26,13 @@ def Player2BewegungW(event):
 
 def Player2BewegungS(event):
         c.move(player, 0, 8)    
-
+c.bind_all("<Key>", PlayerBewegung)
+c.bind_all("<KeyPress-s>", Player2BewegungS)
+c.bind_all("<KeyPress-w>", Player2BewegungW)
 
 while True:
         c.move(ball, 1 ,2)
         window.update()
         sleep(0.01)
-        
-c.bind_all("<Key>", PlayerBewegung)
-c.bind_all("<KeyPress-s>", Player2BewegungS)
-c.bind_all("<KeyPress-w>", Player2BewegungW)       
+               
 window.mainloop()
