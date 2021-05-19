@@ -27,6 +27,7 @@ c.bind_all("<KeyPress-s>", Player2BewegungS)
 c.bind_all("<KeyPress-w>", Player2BewegungW)
 ball_richtung_x = 1
 ball_richtung_y = 1
-
 c.move(ball, ball_richtung_x, ball_richtung_y)
 window.mainloop()
+while True:
+c.move(ball, 1, 1)
