@@ -1,5 +1,9 @@
 from time import sleep
 from tkinter import *
+scorePlayerA = 0
+scorePlayerB = 0
+time = 0
+i = 0
 window = Tk()
 window.title("ping-pong")
 c = Canvas(window, height=300, width=400, bg="black")
@@ -16,9 +20,11 @@ def PlayerBewegung(event):
         c.move(player2, 0, -8)        
     elif key == "Down":
         c.move(player2, 0, 8)
+    
      
 def Player2BewegungW(event):
         c.move(player, 0, -8)
+
 def Player2BewegungS(event):
         c.move(player, 0, 8)    
 
@@ -29,7 +35,6 @@ ball_richtung_x = 1
 ball_richtung_y = 1
 c.move(ball, ball_richtung_x, ball_richtung_y)
 window.mainloop()
-while True:
-        c.move(ball,1,0)
-        sleep(0.01)
-        window.update()
+for i in range(10):
+        c.move(ball, 8, 8)
+        
