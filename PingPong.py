@@ -1,7 +1,7 @@
 from time import sleep
 from tkinter import *
 window = Tk()
-window.title("PingPong")
+window.title("ping-pong")
 c = Canvas(window, height=300, width=400, bg="black")
 rand = c.create_rectangle(3, 3, 400, 300, outline="darkgreen")
 c.pack()
@@ -23,20 +23,10 @@ def Player2BewegungS(event):
         c.move(player, 0, 8)    
 
 c.bind_all("<Key>", PlayerBewegung)
-
 c.bind_all("<KeyPress-s>", Player2BewegungS)
-
 c.bind_all("<KeyPress-w>", Player2BewegungW)
 ball_richtung_x = 1
 ball_richtung_y = 1
 
 c.move(ball, ball_richtung_x, ball_richtung_y)
-<<<<<<< HEAD
-ball_y = ball
-ball_x = ball
-a = 3
-# Len ist ein schwuler keko
-# test
-=======
 
->>>>>>> 10088da360c89afce29d33a450a335f512ebf8ee
