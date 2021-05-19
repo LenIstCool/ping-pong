@@ -35,6 +35,8 @@ ball_richtung_x = 1
 ball_richtung_y = 1
 c.move(ball, ball_richtung_x, ball_richtung_y)
 window.mainloop()
+window.pack()
+
 while True:
         c.move(ball, 1 ,0)
         c.bind_all("<Key>", PlayerBewegung)
@@ -42,5 +44,5 @@ while True:
         c.bind_all("<KeyPress-w>", Player2BewegungW)
         window.update()
         sleep(0.01)
-        window.mainloop()
+        
         
