@@ -30,4 +30,5 @@ ball_richtung_y = 1
 c.move(ball, ball_richtung_x, ball_richtung_y)
 window.mainloop()
 while True:
-c.move(ball, 1, 1)
+        c.move(ball, ball_richtung_x,ball_richtung_y)
+        sleep(0.01)
