@@ -7,7 +7,6 @@ i = 0
 window = Tk()
 window.title("ping-pong")
 c = Canvas(window, height=400, width=500, bg="black")
-rand = c.create_rectangle(3, 3, 400, 300, outline="darkgreen")
 c.pack()
 player = c.create_rectangle(0, 60, 10, 200, fill="white")
 player2 = c.create_rectangle(390, 60, 400, 200, fill="white")
