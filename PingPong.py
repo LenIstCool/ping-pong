@@ -35,10 +35,10 @@ geschw_y = 0.5
 while True:
         print(c.coords(ball))
         print(c.coords(player2))
-        if c.coords(ball) == c.coords(player2):
+        if c.coords(ball[0]) == c.coords(player2[0]):
                 geschw_x = geschw_x + 1
                 geschw_y = geschw_y + 1  
-                print(c.coords(ball))
+                
 
         c.move(ball, geschw_y, geschw_y)
         window.update()
