@@ -43,15 +43,14 @@ a = 0
 b = 10
 while True:
         print(c.coords(ball))
-        print(c.coords(player2[1,2,3]))
+        print(c.coords(player2))
         
         if ball_x and ball_y == player2_x and player2_y:
-                geschw_x = geschw_x + 1
-                geschw_y = geschw_y + 1  
+                geschw_x = geschw_x + 10
+                geschw_y = geschw_y + 10 
                 sleep(0.1)
                 window.update()
         elif  a != b:       
-
                 c.move(ball, geschw_y, geschw_y)
                 window.update()
                 sleep(0.01)                     
