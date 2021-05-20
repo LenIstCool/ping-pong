@@ -30,11 +30,17 @@ def Player2BewegungS(event):
 c.bind_all("<Key>", PlayerBewegung)
 c.bind_all("<KeyPress-s>", Player2BewegungS)
 c.bind_all("<KeyPress-w>", Player2BewegungW)
-
+geschw_x = 1
+geschw_y = 0.5
 while True:
         print(c.coords(ball))
         print(c.coords(player2))
-        c.move(ball, 1, 0.5)
+        if c.coords(ball) == c.coords(player2):
+                geschw_x = geschw_x + 1
+                geschw_y = geschw_y + 1  
+                print(c.coords(ball))
+
+        c.move(ball, geschw_y, geschw_y)
         window.update()
         sleep(0.01)                     
 window.mainloop()
