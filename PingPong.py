@@ -11,8 +11,15 @@ c = Canvas(window, height=400, width=500, bg="black")
 c.pack()
 player = c.create_rectangle(0, 60, 10, 200, fill="white")
 player2 = c.create_rectangle(390, 60, 400, 200, fill="white")
+ball_y = 200
+ball_x = 190
 
-ball = c.create_rectangle(190, 90, 200, 100, fill="white")
+player_y = 10
+player_x = 0
+
+player2_x = 390
+player2_y = 400
+ball = c.create_rectangle(ball_x, 90, ball_y, 100, fill="white")
 
 def PlayerBewegung(event):
     key = event.keysym
@@ -32,13 +39,18 @@ c.bind_all("<KeyPress-s>", Player2BewegungS)
 c.bind_all("<KeyPress-w>", Player2BewegungW)
 geschw_x = 1
 geschw_y = 0.5
+a = 0
+b = 10
 while True:
         print(c.coords(ball))
-        print(c.coords(player2))
-        if c.coords(ball[1,2,3]) == c.coords(player2[1,2,3]):
+        print(c.coords(player2[1,2,3]))
+        
+        if ball_x and ball_y == player2_x and player2_y:
                 geschw_x = geschw_x + 1
                 geschw_y = geschw_y + 1  
-        elif  c.coords(ball[1,2,3]) != c.coords(player2[1,2,3]):       
+                sleep(0.1)
+                window.update()
+        elif  a != b:       
 
                 c.move(ball, geschw_y, geschw_y)
                 window.update()
