@@ -48,10 +48,11 @@ while True:
         if ball_x and ball_y == player2_x and player2_y:
                 geschw_x = geschw_x + 10
                 geschw_y = geschw_y + 10 
-                sleep(0.1)
+                sleep(0.01)
+                exit()
                 window.update()
         elif  a != b:       
-                c.move(ball, geschw_y, geschw_y)
+                c.move(ball, geschw_x, geschw_y)
                 window.update()
                 sleep(0.01)                     
 window.mainloop()
